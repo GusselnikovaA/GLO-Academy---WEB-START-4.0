@@ -7,12 +7,26 @@ p {
   margin-left: 10px;
 }
 
-.title {
-  font-size: 19px
+.list {
+  font-size: 19px;
 }
 
 li {
   line-height: 25px;
 }
+
+.container {
+  margin-top: 100px;
+}
+
+.end {
+  margin-top: 50px;
+}
+
+span {
+  font-size: 19px;
+  font-weight: bold;
+}
+
 
 
