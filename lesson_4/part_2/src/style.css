@@ -1,0 +1,51 @@
+
+body {
+  margin: 100px;
+}
+
+.container {
+  margin-top: 100px;
+}
+
+.poster {
+  text-align: center;
+}
+
+p {
+  margin-left: 10px;
+}
+
+span {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.list {
+  font-size: 19px;
+}
+
+li {
+  line-height: 25px;
+}
+
+a {
+  text-decoration: none;
+  color:black;
+}
+
+a:hover {
+  color:red;
+  font-weight: bold;
+}
+
+.end {
+  margin-top: 50px;
+}
+
+
+
+
+
+
+
+
