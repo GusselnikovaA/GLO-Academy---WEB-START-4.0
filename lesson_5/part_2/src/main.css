@@ -4,9 +4,9 @@ body {
 
 .nav {
   position: fixed;
-  top: 58px;
+  top: 50px;
   left: 50px;
-  width: 20%;
+  max-width: 20%;
   z-index: 9999;
   margin-right: 20px;
   border: 1px solid black;
@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  width: 60%;
+  max-width: 60%;
   margin: 20px;
   margin-top: 50px;
   margin-left: 30%;
