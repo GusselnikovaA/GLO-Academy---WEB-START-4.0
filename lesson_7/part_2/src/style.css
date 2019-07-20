@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Tahoma", Geneva, Verdana, sans-serif;
+}
+
+.container  {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1140px;
+    margin: auto;
+    margin-top: 77px;
+}
+
+.book-image img {
+    max-width: 100%;
+}
+
+.book-image {
+    max-width: 404px;
+}
+
+.book-description {
+    max-width: 530px;
+    padding-top: 30px;
+    font-size: 18px;
+    line-height: 27px;
+ }
+
+h1 {
+    font-size: 48px;
+}
+
+.author {
+    font-size: 30px;
+}
+
+.book_text {
+    margin-top: 35px;
+}
+
+.book_price {
+    display: block;
+    margin-top: 47px;
+    font-size: 48px;
+    color: #333333;
+}
+
+.button-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 53px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.book_buy {
+    width: 175px;
+    padding: 22px 0px;
+    color: #ffffff;
+    background-color: #f05a22;
+    border-radius: 5px;
+}
+
+.book_details {
+    width: 290px;
+    padding: 22px 0px;
+    line-height: 27px;
+    color: #f05a22;
+    border: 2px solid #f05a22;
+    border-radius: 5px;
+}
+
+.shipping {
+    margin-top: 96px;
+    background-color: #f2f2f2;
+    border: 1px solid #ffffff;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    width:100%;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 27px;
+    color: #333333;
+}
+
+.card-item {
+    max-width: 180px;
+    margin-top: 91px;
+    margin-bottom: 99px;
+    text-align: center;
+}
+
+.card-item:nth-child(3) {
+    max-width: 200px;
+}
+
+.icon {
+    min-height: 50px;
+} 
