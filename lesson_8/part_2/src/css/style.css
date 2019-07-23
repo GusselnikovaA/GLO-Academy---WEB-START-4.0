@@ -174,3 +174,25 @@ line-height: 1.4;
   margin-top: 35px;
 }
 
+.people {
+  background-color: #f4f5f7;
+}
+
+.people-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 64px;
+}
+
+.people_photo {
+  margin-bottom: 36px;
+  max-width: 31%;
+  min-height: 254px;
+}
+
+.people_photo img {
+  max-width: 100%;
+  max-height: 100%;
+}

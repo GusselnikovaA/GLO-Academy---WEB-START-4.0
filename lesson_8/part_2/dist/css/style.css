@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #32325f;
+}
+
+.hero {
+  padding-top: 70px; 
+  background-color: #f4f5f7;
+  padding-bottom: 191px;
+  /* почему мы используем паддинг а не марджин */
+}
+
+.container {
+  max-width: 1140px;
+  width: 96%;
+  margin: auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 159px;
+  /* почему мы используем паддинг а не марджин */
+}
+
+.brand {
+  color: #95989a;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.social a {
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.main {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-text {
+  width: 50%;
+}
+
+.subtitle {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.title {
+  display: block;
+  margin-bottom: 26px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.description {
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.price-tag {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 20px; 
+}
+
+.price{
+  display: block;
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 49px; 
+}
+
+.btn {
+  text-decoration: none;
+  box-shadow: 0 3px 6px rgba(173, 173, 173, 0.16);
+  border-radius: 6px;
+  padding: 20px 30px;
+  color: #fff;
+  background-color: grey;
+}
+
+.btn-success {
+  background-color: #2dce89;
+  margin-right: 20px;
+}
+
+.btn-primary {
+  background-color: #5e72e4;
+}
+
+/* Оформление секций */
+.section {
+  /* отступ внутренней секции */
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.section-subtitle {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.section-title {
+  display: block;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.block {
+  width: 23%;
+  margin-right: 2%;
+}
+
+.block-text {
+  font-size: 16px;
+font-weight: 400;
+margin: 40px 0;
+line-height: 1.4;
+}
+
+.footer {
+  background-color: #32325f;
+  color: #ffffff;
+  padding: 70px 0;
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-block {
+  width: 33%;
+}
+
+.footer-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+
+.footer a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+
+}
+
+.footer p {
+  line-height: 1.4;
+  margin-top: 35px;
+}
+
+.people {
+  background-color: #f4f5f7;
+}
+
+.people-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 64px;
+}
+
+.people_photo {
+  margin-bottom: 36px;
+  max-width: 31%;
+  min-height: 254px;
+}
+
+.people_photo img {
+  max-width: 100%;
+  max-height: 100%;
+}
