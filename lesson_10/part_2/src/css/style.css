@@ -59,6 +59,14 @@ img {
   margin-top: 100px;
 }
 
+.people-about {
+  margin-top: 64px;
+}
+
+.people-photo {
+  margin-bottom: 30px;
+}
+
 .footer {
   background-color: #32325f;
   color: #ffffff;
