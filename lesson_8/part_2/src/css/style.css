@@ -166,7 +166,6 @@ line-height: 1.4;
   display: block;
   color: #ffffff;
   text-decoration: none;
-
 }
 
 .footer p {
@@ -189,7 +188,7 @@ line-height: 1.4;
 .people_photo {
   margin-bottom: 36px;
   max-width: 31%;
-  min-height: 254px;
+  height: 204px;
 }
 
 .people_photo img {
