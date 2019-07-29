@@ -1,0 +1,187 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-weight: 100;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #0e0b1b;
+}
+
+a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+p {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.header-text {
+  font-size: 130px;
+  font-family: "Lightsaber";
+  text-align: center;
+  text-shadow: 0 0 20px #db2a3a;
+  color: #db2a3a;
+}
+
+.header-author {
+  display: block;
+  text-shadow: 0 0 20px #84fcfd;
+  color: #84fcfd;
+}
+
+.header-img {
+  max-width: 100%;
+}
+
+.header-img img {
+  max-width: 100%;
+}
+
+.cards {
+  position: relative;
+  top: 200px;
+}
+
+.cards-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  background-color: lightgrey;
+}
+
+.cards-item {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin-right: 20px;
+  margin-bottom: 50px;
+  padding: 10px;
+  text-align: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.cards-item__front, .cards-item__back {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #ffffff;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.cards-item__front:hover, .cards-item__back:hover {
+  color: #ffffff;
+  border: none;
+  -webkit-box-shadow: 0 0 50px #bc2a8d;
+          box-shadow: 0 0 50px #bc2a8d;
+}
+
+.cards-item__back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.cards-item:hover .cards-item__front {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.cards-item:hover .cards-item__back {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+}
+
+.footer-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0;
+  color: #fff;
+  list-style: none;
+}
+
+.footer-social__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  margin: 20px;
+  font-size: 20px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.vk:hover {
+  color: #00aced;
+  border-color: #00aced;
+  -webkit-box-shadow: 0px 0px 20px #00aced;
+          box-shadow: 0px 0px 20px #00aced;
+}
+
+.instagram:hover {
+  color: #bc2a8d;
+  border-color: #bc2a8d;
+  -webkit-box-shadow: 0px 0px 20px #bc2a8d;
+          box-shadow: 0px 0px 20px #bc2a8d;
+}
+
+.google:hover {
+  color: #db2a3a;
+  border-color: #db2a3a;
+  -webkit-box-shadow: 0px 0px 20px #db2a3a;
+          box-shadow: 0px 0px 20px #db2a3a;
+}
+
+@font-face {
+  font-family: "Lightsaber";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../font/Lightsaber.ttf") format("truetype");
+}
+/*# sourceMappingURL=style.css.map */
