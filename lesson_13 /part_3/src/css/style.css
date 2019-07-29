@@ -1,0 +1,23 @@
+body {
+  font-family: 'Roboto Slab', serif;
+}
+
+.container {
+  max-width: 1920px;
+}
+
+.header {
+  background-image: url(../img/background.png);
+}
+
+.header-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=style.css.map */
