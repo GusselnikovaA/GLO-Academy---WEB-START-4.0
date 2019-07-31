@@ -1,0 +1,105 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #666666;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.button {
+  background-color: #66cc66;
+  color: white;
+  text-transform: uppercase;
+  border: 1px solid #66cc66;
+  cursor: pointer;
+}
+
+.kind-block {
+  padding: 90px 0px;
+}
+
+.kind__title {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 25px;
+  text-transform: uppercase;
+  margin-bottom: 75px;
+  text-align: center;
+}
+
+.kind-cards {
+  max-width: 80%;
+  margin: auto;
+  padding-top: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.kind-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 276px;
+  margin-right: 24px;
+}
+
+.kind__buttons {
+  margin-top: 29px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.kind__button {
+  max-width: 133px;
+  padding: 15px 35px;
+}
+
+.card__title {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  line-height: 25px;
+  text-transform: uppercase;
+  width: 133px;
+  border: 2px solid #66cc66;
+  padding: 15px 0px;
+  color: #66cc66;
+  margin-right: 10px;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
