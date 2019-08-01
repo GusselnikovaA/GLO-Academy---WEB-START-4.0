@@ -14,3 +14,32 @@
 small {
 	font-size: 1.3rem;
 }
+
+.opera {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.bebas {
+	font-family: 'BebasRegular';
+}
+
+.bad {
+	font-family: 'Bad Script', cursive;
+}
+
+.lobster {
+	font-family: 'Lobster', cursive;
+}
+
+@font-face {
+  font-family: 'BebasRegular';
+  src: url('../fonts/BebasRegular/BebasRegular.eot');
+  src: url('../fonts/BebasRegular/BebasRegular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/BebasRegular/BebasRegular.woff') format('woff'),
+  url('../fonts/BebasRegular/BebasRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
