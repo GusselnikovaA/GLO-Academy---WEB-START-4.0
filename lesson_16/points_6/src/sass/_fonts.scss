@@ -16,4 +16,14 @@
   url('../fonts/Arial-BoldMT.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  }
+}
+
+@font-face {
+font-family: 'Arial Italic';
+src: url('../fonts/Arial-ItalicMT.eot');
+src: url('../fonts/Arial-ItalicMT.eot?#iefix') format('embedded-opentype'),
+url('../fonts/Arial-ItalicMT.woff') format('woff'),
+url('../fonts/Arial-ItalicMT.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
