@@ -32,6 +32,7 @@ img {
 
 .price-block {
   padding: 90px 0px;
+  padding-bottom: 120px;
   background-color: #006b00;
 }
 
@@ -88,23 +89,35 @@ img {
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
+  padding-bottom: 15px;
 }
 
 .price-item__subtitle {
-  margin-top: 20px;
   font-size: 19px;
   font-weight: 700;
   line-height: 20px;
+  padding-bottom: 15px;
 }
 
 .price-item__subtitle strong {
   font-size: 30px;
 }
 
+.price__img {
+  min-height: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
 .price-list {
   margin: 0;
   padding: 0;
   list-style: none;
+  min-height: 135px;
 }
 
 .price-list__item {
@@ -130,7 +143,7 @@ img {
 }
 
 .price__button {
-  margin-top: 22px;
+  margin-top: 30px;
   max-width: 209px;
   padding: 25px 60px;
   font-size: 18px;
@@ -165,6 +178,7 @@ img {
 }
 
 .service-cards {
+  padding-left: 100px;
   max-width: 80%;
   margin: auto;
   padding-top: 90px;
@@ -197,7 +211,7 @@ img {
 .service__button {
   margin-top: 50px;
   max-width: 146px;
-  padding: 20px 50px;
+  padding: 17px 50px;
   font-size: 16px;
   font-weight: 400;
 }

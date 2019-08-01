@@ -13,7 +13,7 @@ img {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1176px;
   margin: auto;
 }
 
@@ -26,7 +26,7 @@ img {
 }
 
 .kind-block {
-  padding: 90px 0px;
+  padding: 279px 0px;
 }
 
 .kind__title {
@@ -41,7 +41,6 @@ img {
 .kind-cards {
   max-width: 80%;
   margin: auto;
-  padding-top: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,12 +63,21 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 276px;
+  width: 276px;
   margin-right: 24px;
 }
 
-.kind__buttons {
-  margin-top: 29px;
+.kind__subtitle {
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.kind-action {
+  margin-top: 28px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,25 +87,19 @@ img {
 }
 
 .kind__button {
+  font-size: 14px;
   max-width: 133px;
-  padding: 15px 35px;
-}
-
-.card__title {
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 22px;
-  text-transform: uppercase;
+  padding: 12px 33px;
   text-align: center;
 }
 
 a {
   text-decoration: none;
-  line-height: 25px;
+  font-size: 14px;
   text-transform: uppercase;
   width: 133px;
   border: 2px solid #66cc66;
-  padding: 15px 0px;
+  padding: 12px 0px;
   color: #66cc66;
   margin-right: 10px;
   text-align: center;
