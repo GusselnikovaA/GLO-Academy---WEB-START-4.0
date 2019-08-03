@@ -9,15 +9,20 @@ body {
   font-weight: 100;
 }
 
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
 a {
   text-decoration: none;
-  color: white;
+  color: rgba(255, 255, 255, 0.9);
   font-size: 20px;
 }
 
 .title {
   font-family: "Lightsaber";
-  font-size: 80px;
+  font-size: 130px;
 }
 
 .header-text {
@@ -41,63 +46,139 @@ a {
   max-width: 100%;
 }
 
-.lesson__title {
-  margin: 0;
-  text-align: left;
-  color: #84fcfd;
-  text-shadow: 0 0 10px #84fcfd;
-}
-
-.lesson-card {
+.lesson {
+  margin-top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.lesson-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 50%;
+  padding-right: 50px;
+  padding-top: 20px;
+}
+
+.lesson-title__text {
+  text-align: center;
+  color: #bc2a8d;
+  text-shadow: 0 0 10px #bc2a8d;
+  line-height: 0.7;
+}
+
+.lesson-title__img {
+  margin-top: 60px;
+}
+
+.lesson-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20px;
 }
 
 .lesson__item {
-  max-width: 500px;
-  min-width: 150px;
-  border: 1px solid #ffffff;
-  -webkit-box-shadow: 0 0 5px #ffffff;
-          box-shadow: 0 0 5px #ffffff;
-  height: 130px;
-  margin-bottom: 20px;
-  padding: 10px;
+  width: 500px;
+  border: 0px solid #ffffff;
+  border-radius: 30px;
+  height: 60px;
+  margin-bottom: 10px;
+  padding: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 .lesson__item:hover {
-  border: 1px solid #84fcfd;
-  -webkit-box-shadow: 0 0 20px #84fcfd;
-          box-shadow: 0 0 20px #84fcfd;
-  color: #84fcfd;
+  border: 0px solid #bc2a8d;
+  -webkit-box-shadow: 0 0 20px #bc2a8d;
+          box-shadow: 0 0 20px #bc2a8d;
+  color: #bc2a8d;
 }
 
-.add__title {
-  margin: 0;
+.add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.add-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+
+.add-title__text {
   text-align: center;
-  color: #db2a3a;
-  text-shadow: 0 0 10px #db2a3a;
+  color: #84fcfd;
+  text-shadow: 0 0 10px #84fcfd;
+  line-height: 0.7;
+}
+
+.add-title__img {
+  margin-top: 60px;
 }
 
 .add-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -107,12 +188,10 @@ a {
 }
 
 .add__item {
-  max-width: 500px;
-  min-width: 150px;
-  border: 1px solid #ffffff;
+  width: 500px;
   -webkit-box-shadow: 0 0 5px #ffffff;
           box-shadow: 0 0 5px #ffffff;
-  height: 130px;
+  height: 60px;
   margin-bottom: 20px;
   padding: 10px;
   display: -webkit-box;
@@ -121,21 +200,23 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 .add__item:hover {
-  border: 1px solid #db2a3a;
-  -webkit-box-shadow: 0 0 20px #db2a3a;
-          box-shadow: 0 0 20px #db2a3a;
-  color: #db2a3a;
+  -webkit-box-shadow: 0 0 20px #84fcfd;
+          box-shadow: 0 0 20px #84fcfd;
+  color: #84fcfd;
 }
 
 .practice__title {
   margin: 0;
-  text-align: right;
+  text-align: center;
   color: #bc2a8d;
   text-shadow: 0 0 20px #bc2a8d;
 }
@@ -213,89 +294,5 @@ a {
   font-style: normal;
   font-weight: normal;
   src: url("../font/Lightsaber.ttf") format("truetype");
-}
-
-@media (max-width: 1094px) {
-  .lesson__item {
-    min-width: 100px;
-    max-width: 150px;
-    max-height: 150px;
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 874px) {
-  .lesson__item {
-    min-width: 90px;
-    max-width: 120px;
-    font-size: 17px;
-  }
-  .header-text {
-    font-size: 100px;
-  }
-}
-
-@media (max-width: 780px) {
-  .lesson__item {
-    min-width: 10px;
-    font-size: 15px;
-  }
-  .header-text {
-    font-size: 80px;
-  }
-}
-
-@media (max-width: 714px) {
-  .lesson__item {
-    min-width: 500px;
-    max-width: 700px;
-    max-height: 50px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .lesson-card {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .footer-social {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-@media (max-width: 590px) {
-  .lesson__item {
-    min-width: 400px;
-    max-width: 500px;
-  }
-  .header-text {
-    font-size: 70px;
-  }
-  .footer-social__item {
-    width: 35px;
-    height: 35px;
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 480px) {
-  .lesson__item {
-    min-width: 350px;
-    max-width: 400px;
-    font-size: 12px;
-    max-height: 40px;
-  }
-  .header-text {
-    font-size: 50px;
-  }
-  .footer-social__item {
-    width: 35px;
-    height: 35px;
-    font-size: 15px;
-  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -18,43 +18,87 @@ a
   color: white
   font-size: 20px
 
+.title
+  font-family: "Lightsaber"
+  font-size: 80px
+
 .header
   &-text 
     text-align: center
     font-size: 130px
-    font-family: "Lightsaber"
     color: $red_neon
     text-shadow: 0 0 20px $red_neon
   &-author 
     display: block
-    color: #84fcfd
+    color: $blue_neon
     text-shadow: 0 0 20px $blue_neon
   &-img
     max-width: 100%
     img
       max-width: 100%
 
-.lessons 
-  display: flex
-  justify-content: center
-  align-items: center
+.lesson
+  &__title
+    margin: 0
+    text-align: left
+    color: $blue_neon
+    text-shadow: 0 0 10px $blue_neon
+  &-card
+    display: flex
+    justify-content: center
+    align-items: center
+  &__item
+    max-width: 500px
+    min-width: 150px
+    border: 1px solid $white
+    box-shadow: 0 0 5px $white
+    height: 130px
+    margin-bottom: 20px
+    padding: 10px
+    display: flex
+    align-items: center
+    text-align: center
+    transition: all 0.3s
+    &:hover 
+      border: 1px solid $blue_neon
+      box-shadow: 0 0 20px $blue_neon
+      color: $blue_neon
 
-.lesson 
-  max-width: 500px
-  min-width: 150px
-  border: 1px solid $white
-  box-shadow: 0 0 5px $white
-  height: 130px
-  margin-bottom: 20px
-  padding: 10px
-  display: flex
-  align-items: center
-  text-align: center
-  transition: all 0.3s
-  &:hover 
-    border: 1px solid $purple_neon
-    box-shadow: 0 0 20px $purple_neon
+.add
+  &__title
+    margin: 0
+    text-align: center
+    color: $red_neon
+    text-shadow: 0 0 10px $red_neon
+  &-card
+    display: flex
+    justify-content: center
+    align-items: center
+  &__item
+    max-width: 500px
+    min-width: 150px
+    border: 1px solid $white
+    box-shadow: 0 0 5px $white
+    height: 130px
+    margin-bottom: 20px
+    padding: 10px
+    display: flex
+    align-items: center
+    text-align: center
+    transition: all 0.3s
+    &:hover 
+      border: 1px solid $red_neon
+      box-shadow: 0 0 20px $red_neon
+      color: $red_neon
+
+.practice
+  &__title
+    margin: 0
+    text-align: right
     color: $purple_neon
+    text-shadow: 0 0 20px $purple_neon
+
+
 
 .footer  
   &-social 
@@ -115,58 +159,73 @@ a
 
 
 @media (max-width: 1094px) 
-  .lesson 
-    min-width: 100px
-    max-width: 150px
-    max-height: 150px
-    font-size: 18px
+  .lesson
+    &__item
+      min-width: 100px
+      max-width: 150px
+      max-height: 150px
+      font-size: 18px
 
 @media (max-width: 874px) 
-  .lesson 
-    min-width: 90px
-    max-width: 120px
-    font-size: 17px
-  .header-text 
-    font-size: 100px
+  .lesson
+    &__item 
+      min-width: 90px
+      max-width: 120px
+      font-size: 17px
+  .header
+    &-text 
+      font-size: 100px
 
 @media (max-width: 780px) 
-  .lesson 
-    min-width: 10px
-    font-size: 15px
-  .header-text
-    font-size: 80px
+  .lesson
+    &__item 
+      min-width: 10px
+      font-size: 15px
+  .header
+    &-text
+      font-size: 80px
 
 @media (max-width: 714px)
-  .lessons
-    flex-direction: column
   .lesson
-    min-width: 500px
-    max-width: 700px
-    max-height: 50px
-    justify-content: center
-  .social
-    justify-content: center
+    &__item
+      min-width: 500px
+      max-width: 700px
+      max-height: 50px
+      justify-content: center
+    &-card
+      flex-direction: column
+  .footer  
+    &-social
+      justify-content: center
 
 @media (max-width: 590px)
   .lesson 
-    min-width: 400px
-    max-width: 500px
-  .header-text
-    font-size: 70px
-  .social__item
-    width: 35px
-    height: 35px
-    font-size: 15px
+    &__item
+      min-width: 400px
+      max-width: 500px
+  .header
+    &-text
+      font-size: 70px
+  .footer  
+    &-social
+      &__item
+        width: 35px
+        height: 35px
+        font-size: 15px
 
 @media (max-width: 480px)
   .lesson
-    min-width: 350px
-    max-width: 400px
-    font-size: 12px
-    max-height: 40px
-  .header-text 
-    font-size: 50px
-  .social__item
-    width: 35px
-    height: 35px
-    font-size: 15px
+    &__item
+      min-width: 350px
+      max-width: 400px
+      font-size: 12px
+      max-height: 40px
+  .header
+    &-text 
+      font-size: 50px
+  .footer  
+    &-social
+      &__item
+        width: 35px
+        height: 35px
+        font-size: 15px

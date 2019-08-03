@@ -103,7 +103,7 @@ p {
 }
 
 .cards-item__front:hover, .cards-item__back:hover {
-  color: #ffffff;
+  color: #bc2a8d;
   border: none;
   -webkit-box-shadow: 0 0 50px #bc2a8d;
           box-shadow: 0 0 50px #bc2a8d;
