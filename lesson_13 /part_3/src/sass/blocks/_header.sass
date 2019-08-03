@@ -1,28 +1,28 @@
 .header
   padding-left: 390px
   padding-right: 130px
-  padding-top: 18px
+  padding-top: 25px
   background-image: url(../img/background.png)
   &-block
     display: flex
     justify-content: space-between
     align-items: center 
-  &-text
-    padding-top: 110px
-  &__title 
-    .title
+  &__text
+    padding-top: 90px
+    .title 
       font-size: 60px
       color: $violet
     span
+      margin-top: -7px
       display: block
-      width: 409px
-      padding: 17px 20px
+      max-width: 409px
+      padding: 12px 20px
       font-size: 36px
       background-color: $violet
       color: $white
     // padding-bottom: 80px
-  &-tagline
-    margin-top: 94px
+  &__tagline
+    padding-top: 70px
     &__text
       display: inline-block
       margin-left: 39px
@@ -30,7 +30,7 @@
       font-weight: 300
       font-family: 'Roboto', serif;
       line-height: 30px
-  &-action
+  &__button
     margin-top: 94px
     .button
       padding: 28px 54px
@@ -44,9 +44,10 @@
       margin-right: 30px
       margin-bottom: 60px
     a 
-      padding: 28px 75px
+      padding: 24px 75px
+      height: 50px
       font-size: 22px
       color: #01b3e0
       text-decoration: none
       box-shadow: 0 2px 16px rgba(0, 215, 255, 0.44)
-      border: 2px solid #7f70b1
+      border: 2px solid #01b3e0
