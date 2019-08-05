@@ -10,7 +10,7 @@ $blue_vk: #00aced
 
 body
   background-color: $dark_blue
-  font-family: 'Montserrat', sans-serif
+  font-family: 'Comfortaa', cursive, sans-serif
   font-weight: 100
 
 .container
@@ -53,10 +53,6 @@ a
     justify-content: center
     align-items: center
     width: 50%
-    // background: url('../img/glass_2.png') 
-    // background-size: contain
-    // background-repeat: no-repeat
-    // background-position: center bottom
     padding-right: 50px
     padding-top: 20px
     &__text
@@ -74,7 +70,6 @@ a
     padding-top: 20px
   &__item
     width: 500px
-    border: 0px solid $white
     border-radius: 30px
     height: 60px
     margin-bottom: 10px
@@ -84,7 +79,6 @@ a
     justify-content: center
     transition: all 0.3s
     &:hover 
-      border: 0px solid $purple_neon
       box-shadow: 0 0 20px $purple_neon
       color: $purple_neon
 
@@ -106,14 +100,17 @@ a
       line-height: 0.7
     &__img 
       margin-top: 60px
+      img
+        display: block
+        margin: auto
+        max-width: 60%
   &-card
     display: flex
     flex-direction: column
-    justify-content: center
+    justify-content: flex-start
     align-items: center
   &__item
     width: 500px
-    box-shadow: 0 0 5px $white
     height: 60px
     margin-bottom: 20px
     padding: 10px
@@ -123,15 +120,18 @@ a
     text-align: center
     transition: all 0.3s
     &:hover 
+      border-radius: 30px
       box-shadow: 0 0 20px $blue_neon
       color: $blue_neon
+
+
 
 .practice
   &__title
     margin: 0
     text-align: center
-    color: $purple_neon
-    text-shadow: 0 0 20px $purple_neon
+    color: $red_neon
+    text-shadow: 0 0 20px $red_neon
 
 
 
