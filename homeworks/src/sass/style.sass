@@ -9,135 +9,174 @@ $blue_vk: #00aced
   box-sizing: border-box
 
 body
-  font-weight: 100
-  font-family: 'Montserrat', sans-serif
   background-color: $dark_blue
+  font-family: 'Montserrat', sans-serif
+  font-weight: 100
 
 a 
-  font-size: 20px
   text-decoration: none
-  color: $white
+  color: white
+  font-size: 20px
 
-p 
-  font-size: 16px
-  line-height: 30px
-
+.title
+  font-family: "Lightsaber"
+  font-size: 80px
 
 .header
   &-text 
-    font-size: 130px
-    font-family: "Lightsaber"
     text-align: center
-    text-shadow: 0 0 20px $red_neon
+    font-size: 130px
     color: $red_neon
+    text-shadow: 0 0 20px $red_neon
   &-author 
     display: block
+    color: $blue_neon
     text-shadow: 0 0 20px $blue_neon
-    color: #84fcfd
   &-img
     max-width: 100%
     img
       max-width: 100%
 
-.cards
-  position: relative
-  top: 200px
-  &-wrap
-    position: absolute
-    top: 0
-    left: 0
+.lesson
+  &__title
+    margin: 0
+    text-align: left
+    color: $blue_neon
+    text-shadow: 0 0 10px $blue_neon
+  &-card
+    padding-top: 30px
     display: flex
-    justify-content: space-around
+    justify-content: center
     align-items: center
-    flex-wrap: wrap
-    height: 100%
-    width: 100%
-    background-color: lightgrey
-  &-item
-    position: relative
-    // display: flex
-    // align-items: center
-    width: 250px
-    height: 250px
-    margin-right: 20px
-    margin-bottom: 50px
+  &__item
+    max-width: 500px
+    min-width: 150px
+    border: 1px solid $white
+    box-shadow: 0 0 5px $white
+    height: 130px
+    margin-bottom: 20px
     padding: 10px
+    display: flex
+    justify-content: center
+    align-items: center
     text-align: center
     transition: all 0.3s
-    perspective: 1000px
-    &__front, &__back
-      position: absolute
-      left: 0
-      top: 0
-      display: flex;
+    &:hover 
+      border: 1px solid $blue_neon
+      box-shadow: 0 0 20px $blue_neon
+      color: $blue_neon
+
+.add
+  &__title
+    margin: 0
+    text-align: center
+    color: $red_neon
+    text-shadow: 0 0 10px $red_neon
+    display: flex
+    align-items: center
+  &-card
+    display: flex
+    justify-content: center
+    align-items: center
+  &__item
+    max-width: 500px
+    min-width: 150px
+    border: 1px solid $white
+    box-shadow: 0 0 5px $white
+    height: 130px
+    margin-bottom: 20px
+    padding: 10px
+    display: flex
+    align-items: center
+    text-align: center
+    transition: all 0.3s
+    &:hover 
+      border: 1px solid $red_neon
+      box-shadow: 0 0 20px $red_neon
+      color: $red_neon
+
+.practice
+  &__title
+    margin: 0
+    text-align: right
+    color: $purple_neon
+    text-shadow: 0 0 20px $purple_neon
+
+.arrows
+  color: #fff
+  padding: 0
+  display: flex
+  justify-content: center
+  align-items: center
+  img
+    max-width: 30%
+  &__left, &__right 
+      width: 40px
+      height: 40px
+      border-radius: 50%
+      border: 2px solid $white
+      display: flex
       justify-content: center
       align-items: center
-      height: 100%
-      width: 100%
-      border: 1px solid $white
-      // box-shadow: 0 0 5px $white
-      transition: 1s
-      backface-visibility: hidden
-      &:hover 
-        color: $purple_neon
-        border: none
-        box-shadow: 0 0 50px $purple_neon
-    &__back
-      transform: rotateY(180deg)
-    &:hover .cards-item__front
-      transform: rotateY(180deg)
-    &:hover .cards-item__back
-      transform: rotateY(360deg)
+      font-size: 20px
+      transition: all 0.3s
+      margin: 20px
+      cursor: pointer
+      &:hover
+        border-color: $blue_neon
+        box-shadow: 0px 0px 20px $blue_neon
+        color: $blue_neon
+
 
 
 .footer  
   &-social 
-    display: flex
-    justify-content: flex-end
-    padding: 0
     color: #fff
     list-style: none
+    padding: 0
+    display: flex
+    justify-content: flex-end
     &__item 
+      width: 40px
+      height: 40px
+      border-radius: 50%
+      border: 2px solid $white
       display: flex
       justify-content: center
       align-items: center
-      width: 40px
-      height: 40px
-      margin: 20px
       font-size: 20px
-      border: 2px solid $white
-      border-radius: 50%
       transition: all 0.3s
+      margin: 20px
       cursor: pointer
 
 .vk:hover 
-  color: $blue_vk
   border-color: $blue_vk
   box-shadow: 0px 0px 20px $blue_vk
+  color: $blue_vk
 
 .instagram:hover 
-  color: $purple_neon
   border-color: $purple_neon
   box-shadow: 0px 0px 20px $purple_neon
+  color: $purple_neon
 
 .google:hover
-  color: $red_neon
   border-color: $red_neon
   box-shadow: 0px 0px 20px $red_neon
+  color: $red_neon
 
 
 
-// @font-face 
-//   font-family: "NEON"
-//   font-style: normal
-//   font-weight: normal
-//   src: url("../font/NEON.ttf") format("truetype")
+@font-face 
+  font-family: "NEON"
+  font-style: normal
+  font-weight: normal
+  src: url("../font/NEON.ttf") format("truetype")
 
-// @font-face 
-//   font-family: "potra"
-//   font-style: normal
-//   font-weight: normal
-//   src: url("../font/Potra.ttf") format("truetype")
+@font-face 
+  font-family: "potra"
+  font-style: normal
+  font-weight: normal
+  src: url("../font/Potra.ttf") format("truetype")
 
 @font-face 
   font-family: "Lightsaber"
@@ -148,59 +187,74 @@ p
 
 
 
-// @media (max-width: 1094px) 
-//   .lesson 
-//     min-width: 100px
-//     max-width: 150px
-//     max-height: 150px
-//     font-size: 18px
+@media (max-width: 1094px) 
+  .lesson
+    &__item
+      min-width: 100px
+      max-width: 150px
+      max-height: 150px
+      font-size: 18px
 
-// @media (max-width: 874px) 
-//   .lesson 
-//     min-width: 90px
-//     max-width: 120px
-//     font-size: 17px
-//   .header-text 
-//     font-size: 100px
+@media (max-width: 874px) 
+  .lesson
+    &__item 
+      min-width: 90px
+      max-width: 120px
+      font-size: 17px
+  .header
+    &-text 
+      font-size: 100px
 
-// @media (max-width: 780px) 
-//   .lesson 
-//     min-width: 10px
-//     font-size: 15px
-//   .header-text
-//     font-size: 80px
+@media (max-width: 780px) 
+  .lesson
+    &__item 
+      min-width: 10px
+      font-size: 15px
+  .header
+    &-text
+      font-size: 80px
 
-// @media (max-width: 714px)
-//   .lessons
-//     flex-direction: column
-//   .lesson
-//     min-width: 500px
-//     max-width: 700px
-//     max-height: 50px
-//     justify-content: center
-//   .social
-//     justify-content: center
+@media (max-width: 714px)
+  .lesson
+    &__item
+      min-width: 500px
+      max-width: 700px
+      max-height: 50px
+      justify-content: center
+    &-card
+      flex-direction: column
+  .footer  
+    &-social
+      justify-content: center
 
-// @media (max-width: 590px)
-//   .lesson 
-//     min-width: 400px
-//     max-width: 500px
-//   .header-text
-//     font-size: 70px
-//   .social__item
-//     width: 35px
-//     height: 35px
-//     font-size: 15px
+@media (max-width: 590px)
+  .lesson 
+    &__item
+      min-width: 400px
+      max-width: 500px
+  .header
+    &-text
+      font-size: 70px
+  .footer  
+    &-social
+      &__item
+        width: 35px
+        height: 35px
+        font-size: 15px
 
-// @media (max-width: 480px)
-//   .lesson
-//     min-width: 350px
-//     max-width: 400px
-//     font-size: 12px
-//     max-height: 40px
-//   .header-text 
-//     font-size: 50px
-//   .social__item
-//     width: 35px
-//     height: 35px
-//     font-size: 15px
+@media (max-width: 480px)
+  .lesson
+    &__item
+      min-width: 350px
+      max-width: 400px
+      font-size: 12px
+      max-height: 40px
+  .header
+    &-text 
+      font-size: 50px
+  .footer  
+    &-social
+      &__item
+        width: 35px
+        height: 35px
+        font-size: 15px
